@@ -22,6 +22,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 
 
+
 import { AppComponent } from './app.component';
 import { CustomersComponent } from './customers/customers.component';
 import { InvoicesComponent } from './invoices/invoices.component';
@@ -32,6 +33,8 @@ import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { PhoneDirective } from './validators/phone.directive';
 import { HoursDirective } from './validators/hours.directive';
 import { HoursControlComponent } from './hours-control/hours-control.component';
+import { MatCardActions, MatCardContent, MatCardHeader, MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 export const ROUTES = [
   { path: 'invoices', component: InvoicesComponent },
@@ -77,6 +80,31 @@ export const ROUTES = [
     MatSlideToggleModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatCardActions,
+    MatFormFieldModule,
+   // MatInputContainer,
+    MatCardContent,
+    MatCardModule,
+    MatCardHeader,
+
+
+
+  ],
+  exports: [
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCardActions,
+    MatFormFieldModule,
+   // MatInputContainer,
+    MatCardContent,
+    MatCardModule,
+    MatCardHeader,
   ],
   providers: [],
   bootstrap: [
